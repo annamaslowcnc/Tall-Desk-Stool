@@ -7,14 +7,14 @@
     "ioValues": [
         {
             "name": "Wood Thickness",
-            "ioValue": 10
+            "ioValue": 19
         },
         {
-            "name": "Stool Height",
-            "ioValue": 10
+            "name": "Stool Seat Height",
+            "ioValue": 800
         },
         {
-            "name": "name3",
+            "name": "TBD",
             "ioValue": 10
         }
     ],
@@ -42,7 +42,7 @@
         },
         {
             "atomType": "Input",
-            "name": "Stool Height",
+            "name": "Stool Seat Height",
             "x": 0.04,
             "y": 0.39294117647058824,
             "uniqueID": 1734479149813,
@@ -52,16 +52,585 @@
         },
         {
             "atomType": "Input",
-            "name": "name3",
+            "name": "TBD",
             "x": 0.04,
-            "y": 0.6258823529411764,
+            "y": 0.6023529411764705,
             "uniqueID": 1734479153762,
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Frame",
+            "x": 0.17708333333333331,
+            "y": 0.2070588235294118,
+            "uniqueID": 1734479302872,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Stool Seat Height",
+                    "ioValue": 800
+                },
+                {
+                    "name": "TBD",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1734479303361,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.04,
+                    "y": 0.23529411764705882,
+                    "uniqueID": 1734479302512,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Stool Seat Height",
+                    "x": 0.04,
+                    "y": 0.39294117647058824,
+                    "uniqueID": 1734479302607,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "TBD",
+                    "x": 0.04,
+                    "y": 0.6023529411764705,
+                    "uniqueID": 1734479303429,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 0.1640625,
+                    "y": 0.18823529411764706,
+                    "uniqueID": 1734479534685,
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Stool Seat Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "TBD",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1734479534762,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.04,
+                            "y": 0.23529411764705882,
+                            "uniqueID": 1734479534736,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Stool Seat Height",
+                            "x": 0.04,
+                            "y": 0.39294117647058824,
+                            "uniqueID": 1734479534691,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "TBD",
+                            "x": 0.04,
+                            "y": 0.6023529411764705,
+                            "uniqueID": 1734479534693,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 0.23697916666666666,
+                    "y": 0.3764705882352941,
+                    "uniqueID": 1734479542243,
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Stool Seat Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "TBD",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1734479542621,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.04,
+                            "y": 0.23529411764705882,
+                            "uniqueID": 1734479542401,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Stool Seat Height",
+                            "x": 0.04,
+                            "y": 0.39294117647058824,
+                            "uniqueID": 1734479542591,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "TBD",
+                            "x": 0.04,
+                            "y": 0.6023529411764705,
+                            "uniqueID": 1734479542559,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 0.2921875,
+                    "y": 0.5858823529411765,
+                    "uniqueID": 1734479546056,
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Stool Seat Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "TBD",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1734479545686,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.04,
+                            "y": 0.23529411764705882,
+                            "uniqueID": 1734479546432,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Stool Seat Height",
+                            "x": 0.04,
+                            "y": 0.39294117647058824,
+                            "uniqueID": 1734479546243,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "TBD",
+                            "x": 0.04,
+                            "y": 0.6023529411764705,
+                            "uniqueID": 1734479546007,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 0.34270833333333334,
+                    "y": 0.8211764705882353,
+                    "uniqueID": 1734479550728,
+                    "ioValues": [
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Stool Seat Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "TBD",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1734479550015,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.04,
+                            "y": 0.23529411764705882,
+                            "uniqueID": 1734479549986,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Stool Seat Height",
+                            "x": 0.04,
+                            "y": 0.39294117647058824,
+                            "uniqueID": 1734479550195,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "TBD",
+                            "x": 0.04,
+                            "y": 0.6023529411764705,
+                            "uniqueID": 1734479550196,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Back",
+            "x": 0.2265625,
+            "y": 0.36705882352941177,
+            "uniqueID": 1734479308126,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Stool Seat Height",
+                    "ioValue": 800
+                },
+                {
+                    "name": "TBD",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1734479308921,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.04,
+                    "y": 0.23529411764705882,
+                    "uniqueID": 1734479308739,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Stool Seat Height",
+                    "x": 0.04,
+                    "y": 0.39294117647058824,
+                    "uniqueID": 1734479308196,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "TBD",
+                    "x": 0.04,
+                    "y": 0.6023529411764705,
+                    "uniqueID": 1734479309067,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Seat",
+            "x": 0.2583333333333333,
+            "y": 0.5811764705882353,
+            "uniqueID": 1734479314347,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Stool Seat Height",
+                    "ioValue": 800
+                },
+                {
+                    "name": "TBD",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1734479314911,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.04,
+                    "y": 0.23529411764705882,
+                    "uniqueID": 1734479314687,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Stool Seat Height",
+                    "x": 0.04,
+                    "y": 0.39294117647058824,
+                    "uniqueID": 1734479314396,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "TBD",
+                    "x": 0.04,
+                    "y": 0.6023529411764705,
+                    "uniqueID": 1734479315219,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Foot Rest",
+            "x": 0.3026041666666667,
+            "y": 0.8258823529411764,
+            "uniqueID": 1734479325916,
+            "ioValues": [
+                {
+                    "name": "Wood Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Stool Seat Height",
+                    "ioValue": 800
+                },
+                {
+                    "name": "TBD",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": 1734479326124,
+                    "ioValues": [],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Wood Thickness",
+                    "x": 0.04,
+                    "y": 0.23529411764705882,
+                    "uniqueID": 1734479326012,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "Stool Seat Height",
+                    "x": 0.04,
+                    "y": 0.39294117647058824,
+                    "uniqueID": 1734479325654,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "TBD",
+                    "x": 0.04,
+                    "y": 0.6023529411764705,
+                    "uniqueID": 1734479326502,
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                }
+            ],
+            "allConnectors": [],
+            "fileTypeVersion": 1,
+            "compiledBom": {}
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1734479142888,
+            "ap2ID": 1734479302872
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1734479142888,
+            "ap2ID": 1734479308126
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1734479142888,
+            "ap2ID": 1734479314347
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Wood Thickness",
+            "ap2Primary": false,
+            "ap1ID": 1734479142888,
+            "ap2ID": 1734479325916
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Stool Seat Height",
+            "ap2Primary": false,
+            "ap1ID": 1734479149813,
+            "ap2ID": 1734479302872
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Stool Seat Height",
+            "ap2Primary": false,
+            "ap1ID": 1734479149813,
+            "ap2ID": 1734479314347
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Stool Seat Height",
+            "ap2Primary": false,
+            "ap1ID": 1734479149813,
+            "ap2ID": 1734479325916
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "Stool Seat Height",
+            "ap2Primary": false,
+            "ap1ID": 1734479149813,
+            "ap2ID": 1734479308126
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
