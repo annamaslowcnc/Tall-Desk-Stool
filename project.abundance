@@ -862,17 +862,17 @@
                 {
                     "atomType": "Molecule",
                     "name": "Back",
-                    "x": 0.27447916666666666,
-                    "y": 0.8164705882352942,
+                    "x": 0.23906249999999998,
+                    "y": 0.5741176470588235,
                     "uniqueID": 1734479546056,
                     "ioValues": [
                         {
                             "name": "Wood Thickness",
-                            "ioValue": 10
+                            "ioValue": 19
                         },
                         {
                             "name": "Stool Seat Height",
-                            "ioValue": 10
+                            "ioValue": 800
                         },
                         {
                             "name": "TBD",
@@ -917,17 +917,163 @@
                             "uniqueID": 1734479546007,
                             "ioValues": [],
                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.18072916666666666,
+                            "y": 0.23529411764705882,
+                            "uniqueID": 1734634291732,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 70
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.171875,
+                            "y": 0.6635294117647059,
+                            "uniqueID": 1734634296962,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 50
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.3625,
+                            "y": 0.691764705882353,
+                            "uniqueID": 1734634359559,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1734634296962
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 1075
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 25
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.35572916666666665,
+                            "y": 0.24,
+                            "uniqueID": 1734634364856,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 765
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "H-35",
+                            "x": 0.17552083333333332,
+                            "y": 0.4494117647058824,
+                            "uniqueID": 1734634369585,
+                            "ioValues": [
+                                {
+                                    "name": "H",
+                                    "ioValue": 800
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "H-35"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "H+300-25",
+                            "x": 0.17239583333333333,
+                            "y": 0.8564705882352941,
+                            "uniqueID": 1734634374836,
+                            "ioValues": [
+                                {
+                                    "name": "H",
+                                    "ioValue": 800
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "H+300-25"
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "H",
+                            "ap2Primary": false,
+                            "ap1ID": 1734479546243,
+                            "ap2ID": 1734634374836
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "H",
+                            "ap2Primary": false,
+                            "ap1ID": 1734479546243,
+                            "ap2ID": 1734634369585
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1734634296962,
+                            "ap2ID": 1734634359559
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734634369585,
+                            "ap2ID": 1734634364856
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734634374836,
+                            "ap2ID": 1734634359559
+                        }
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 },
                 {
                     "atomType": "Molecule",
                     "name": "Cross Beam",
-                    "x": 0.18385416666666665,
-                    "y": 0.6329411764705882,
+                    "x": 0.13854166666666667,
+                    "y": 0.7929411764705883,
                     "uniqueID": 1734479550728,
                     "ioValues": [
                         {
@@ -1245,6 +1391,13 @@
                 },
                 {
                     "ap1Name": "number or geometry",
+                    "ap2Name": "Wood Thickness",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302512,
+                    "ap2ID": 1734479546056
+                },
+                {
+                    "ap1Name": "number or geometry",
                     "ap2Name": "Stool Seat Height",
                     "ap2Primary": false,
                     "ap1ID": 1734479302607,
@@ -1263,6 +1416,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734479302607,
                     "ap2ID": 1734479550728
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Stool Seat Height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302607,
+                    "ap2ID": 1734479546056
                 },
                 {
                     "ap1Name": "Geometry",
