@@ -1471,7 +1471,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Fusion",
+                    "unionType": "Assembly",
                     "unionIndex": 1
                 },
                 {
@@ -1674,8 +1674,8 @@
         {
             "atomType": "Molecule",
             "name": "Back",
-            "x": 0.22708333333333333,
-            "y": 0.35058823529411764,
+            "x": 0.23489583333333336,
+            "y": 0.3905882352941177,
             "uniqueID": 1734479308126,
             "ioValues": [
                 {
@@ -2979,17 +2979,17 @@
             "allConnectors": [
                 {
                     "ap1Name": "number or geometry",
-                    "ap2Name": "zDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734636483475
-                },
-                {
-                    "ap1Name": "number or geometry",
                     "ap2Name": "height",
                     "ap2Primary": false,
                     "ap1ID": 1734635422097,
                     "ap2ID": 1734635421404
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734636483475
                 },
                 {
                     "ap1Name": "geometry",
@@ -3209,21 +3209,21 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.6302083333333334,
-                    "y": 0.4023529411764706,
+                    "x": 0.38802083333333337,
+                    "y": 0.23058823529411765,
                     "uniqueID": 1734636809130,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1734636826556
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": -200
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 0
+                            "ioValue": -200
                         },
                         {
                             "name": "zDist",
@@ -3261,8 +3261,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.24895833333333334,
-                    "y": 0.48,
+                    "x": 0.24947916666666667,
+                    "y": 0.47764705882352937,
                     "uniqueID": 1734636840597,
                     "ioValues": [
                         {
@@ -3279,7 +3279,7 @@
                         },
                         {
                             "name": "z-axis degrees",
-                            "ioValue": 45
+                            "ioValue": 90
                         }
                     ],
                     "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -3287,17 +3287,17 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.3927083333333333,
-                    "y": 0.18823529411764706,
+                    "x": 0.5994791666666667,
+                    "y": 0.2188235294117647,
                     "uniqueID": 1734636947046,
                     "ioValues": [
                         {
-                            "name": "Shape 1",
-                            "ioValue": 1734636826556
+                            "name": "Shape 3",
+                            "ioValue": 1734636809130
                         },
                         {
-                            "name": "Shape 2",
-                            "ioValue": ""
+                            "name": "Shape 4",
+                            "ioValue": 1734636840597
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -3322,14 +3322,21 @@
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 1",
+                    "ap2Name": "Shape 3",
                     "ap2Primary": false,
-                    "ap1ID": 1734636826556,
+                    "ap1ID": 1734636809130,
                     "ap2ID": 1734636947046
                 },
                 {
                     "ap1Name": "geometry",
-                    "ap2Name": "Shape 2",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734636826556,
+                    "ap2ID": 1734636809130
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 4",
                     "ap2Primary": false,
                     "ap1ID": 1734636840597,
                     "ap2ID": 1734636947046
