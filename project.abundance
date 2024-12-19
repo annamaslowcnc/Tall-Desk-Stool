@@ -89,7 +89,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1734479303361,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1734479534685
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -122,8 +127,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Legs",
-                    "x": 0.1578125,
-                    "y": 0.19058823529411764,
+                    "x": 0.17708333333333331,
+                    "y": 0.1623529411764706,
                     "uniqueID": 1734479534685,
                     "ioValues": [
                         {
@@ -589,17 +594,17 @@
                 {
                     "atomType": "Molecule",
                     "name": "Seat",
-                    "x": 0.21510416666666668,
-                    "y": 0.3458823529411765,
+                    "x": 0.27760416666666665,
+                    "y": 0.3482352941176471,
                     "uniqueID": 1734479542243,
                     "ioValues": [
                         {
                             "name": "Wood Thickness",
-                            "ioValue": 10
+                            "ioValue": 19
                         },
                         {
                             "name": "Stool Seat Height",
-                            "ioValue": 10
+                            "ioValue": 800
                         },
                         {
                             "name": "TBD",
@@ -644,6 +649,20 @@
                             "uniqueID": 1734479542559,
                             "ioValues": [],
                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.19010416666666669,
+                            "y": 0.28941176470588237,
+                            "uniqueID": 1734630147262,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 70
+                                }
+                            ],
+                            "description": "Creates a new circle."
                         }
                     ],
                     "allConnectors": [],
@@ -653,8 +672,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Back",
-                    "x": 0.25885416666666666,
-                    "y": 0.5599999999999999,
+                    "x": 0.27447916666666666,
+                    "y": 0.8164705882352942,
                     "uniqueID": 1734479546056,
                     "ioValues": [
                         {
@@ -717,8 +736,8 @@
                 {
                     "atomType": "Molecule",
                     "name": "Cross Beam",
-                    "x": 0.3109375,
-                    "y": 0.7976470588235294,
+                    "x": 0.1875,
+                    "y": 0.6141176470588235,
                     "uniqueID": 1734479550728,
                     "ioValues": [
                         {
@@ -789,14 +808,35 @@
                 },
                 {
                     "ap1Name": "number or geometry",
+                    "ap2Name": "Wood Thickness",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302512,
+                    "ap2ID": 1734479542243
+                },
+                {
+                    "ap1Name": "number or geometry",
                     "ap2Name": "Stool Seat Height",
                     "ap2Primary": false,
                     "ap1ID": 1734479302607,
                     "ap2ID": 1734479534685
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Stool Seat Height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302607,
+                    "ap2ID": 1734479542243
+                },
+                {
+                    "ap1Name": "Geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479534685,
+                    "ap2ID": 1734479303361
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         },
         {
             "atomType": "Molecule",
