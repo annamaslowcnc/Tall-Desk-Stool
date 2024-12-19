@@ -3407,11 +3407,11 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": -219
+                                    "ioValue": 0
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": -219
+                                    "ioValue": 0
                                 },
                                 {
                                     "name": "zDist",
@@ -3423,8 +3423,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.1890625,
-                            "y": 0.291764705882353,
+                            "x": 0.19270833333333331,
+                            "y": 0.2964705882352941,
                             "uniqueID": 1734640916803,
                             "ioValues": [
                                 {
@@ -3449,8 +3449,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.2015625,
-                            "y": 0.7905882352941177,
+                            "x": 0.20416666666666666,
+                            "y": 0.8188235294117647,
                             "uniqueID": 1734640916115,
                             "ioValues": [
                                 {
@@ -3467,40 +3467,10 @@
                                 },
                                 {
                                     "name": "z-axis degrees",
-                                    "ioValue": 90
+                                    "ioValue": -90
                                 }
                             ],
                             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
-                        },
-                        {
-                            "atomType": "Equation",
-                            "name": "-200-t",
-                            "x": 0.2598958333333333,
-                            "y": 0.3976470588235294,
-                            "uniqueID": 1734640916447,
-                            "ioValues": [
-                                {
-                                    "name": "t",
-                                    "ioValue": 19
-                                }
-                            ],
-                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "-200-t"
-                        },
-                        {
-                            "atomType": "Equation",
-                            "name": "-200-t",
-                            "x": 0.25885416666666666,
-                            "y": 0.5223529411764706,
-                            "uniqueID": 1734640924846,
-                            "ioValues": [
-                                {
-                                    "name": "t",
-                                    "ioValue": 19
-                                }
-                            ],
-                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "-200-t"
                         },
                         {
                             "atomType": "Join",
@@ -3539,20 +3509,6 @@
                             "ap2ID": 1734640916115
                         },
                         {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "t",
-                            "ap2Primary": false,
-                            "ap1ID": 1734640901933,
-                            "ap2ID": 1734640916447
-                        },
-                        {
-                            "ap1Name": "number or geometry",
-                            "ap2Name": "t",
-                            "ap2Primary": false,
-                            "ap1ID": 1734640901933,
-                            "ap2ID": 1734640924846
-                        },
-                        {
                             "ap1Name": "geometry",
                             "ap2Name": "Shape 1",
                             "ap2Primary": false,
@@ -3572,20 +3528,6 @@
                             "ap2Primary": false,
                             "ap1ID": 1734640916115,
                             "ap2ID": 1734641509381
-                        },
-                        {
-                            "ap1Name": "result",
-                            "ap2Name": "yDist",
-                            "ap2Primary": false,
-                            "ap1ID": 1734640916447,
-                            "ap2ID": 1734640916496
-                        },
-                        {
-                            "ap1Name": "result",
-                            "ap2Name": "xDist",
-                            "ap2Primary": false,
-                            "ap1ID": 1734640924846,
-                            "ap2ID": 1734640916496
                         }
                     ],
                     "fileTypeVersion": 1,
