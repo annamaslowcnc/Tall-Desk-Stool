@@ -2851,7 +2851,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 800
+                            "ioValue": 19
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2931,7 +2931,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 800
+                            "ioValue": 19
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -2977,6 +2977,20 @@
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734635421404
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734636483475
+                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
@@ -3052,20 +3066,6 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1734635421404,
-                    "ap2ID": 1734636483475
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "height",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734635421404
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "zDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
                     "ap2ID": 1734636483475
                 },
                 {
@@ -3634,11 +3634,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 120
+                            "ioValue": 150
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -50
+                            "ioValue": -30
                         },
                         {
                             "name": "zDist",
@@ -3702,13 +3702,13 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.40052083333333327,
-                    "y": 0.1811764705882353,
+                    "x": 0.4078125,
+                    "y": 0.19294117647058825,
                     "uniqueID": 1734649986884,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1734635421637
                         },
                         {
                             "name": "x-axis degrees",
@@ -3781,6 +3781,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734636604777,
                     "ap2ID": 1734640901215
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734636609596,
+                    "ap2ID": 1734649986884
                 },
                 {
                     "ap1Name": "number or geometry",
