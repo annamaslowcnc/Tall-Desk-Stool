@@ -3412,11 +3412,11 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 0
+                                    "ioValue": -219
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": -200
+                                    "ioValue": -219
                                 },
                                 {
                                     "name": "zDist",
@@ -3428,8 +3428,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.184375,
-                            "y": 0.26823529411764707,
+                            "x": 0.18958333333333333,
+                            "y": 0.27999999999999997,
                             "uniqueID": 1734640916803,
                             "ioValues": [
                                 {
@@ -3506,6 +3506,26 @@
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                             "currentEquation": "-200-t"
+                        },
+                        {
+                            "atomType": "Join",
+                            "name": "Assembly",
+                            "x": 0.5489583333333333,
+                            "y": 0.40705882352941175,
+                            "uniqueID": 1734641509381,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1734640916496
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1734640916115
+                                }
+                            ],
+                            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                            "unionType": "Assembly",
+                            "unionIndex": 0
                         }
                     ],
                     "allConnectors": [
@@ -3524,10 +3544,52 @@
                             "ap2ID": 1734640916115
                         },
                         {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640901933,
+                            "ap2ID": 1734640916447
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640901933,
+                            "ap2ID": 1734640924846
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640916496,
+                            "ap2ID": 1734641509381
+                        },
+                        {
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
                             "ap1ID": 1734640916803,
+                            "ap2ID": 1734640916496
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640916115,
+                            "ap2ID": 1734641509381
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "yDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640916447,
+                            "ap2ID": 1734640916496
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640924846,
                             "ap2ID": 1734640916496
                         }
                     ],
