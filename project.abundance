@@ -3213,8 +3213,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.41354166666666664,
-                    "y": 0.41647058823529415,
+                    "x": 0.39427083333333335,
+                    "y": 0.29411764705882354,
                     "uniqueID": 1734636809130,
                     "ioValues": [
                         {
@@ -3397,8 +3397,8 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.4109375,
-                            "y": 0.26588235294117646,
+                            "x": 0.42447916666666663,
+                            "y": 0.20470588235294118,
                             "uniqueID": 1734640916496,
                             "ioValues": [
                                 {
@@ -3423,8 +3423,8 @@
                         {
                             "atomType": "Rotate",
                             "name": "Rotate",
-                            "x": 0.19270833333333331,
-                            "y": 0.2964705882352941,
+                            "x": 0.1953125,
+                            "y": 0.2211764705882353,
                             "uniqueID": 1734640916803,
                             "ioValues": [
                                 {
@@ -3491,6 +3491,36 @@
                             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                             "unionType": "Assembly",
                             "unionIndex": 0
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "t-200",
+                            "x": 0.3,
+                            "y": 0.3741176470588235,
+                            "uniqueID": 1734642770191,
+                            "ioValues": [
+                                {
+                                    "name": "t",
+                                    "ioValue": 19
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "t-200"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "t+200",
+                            "x": 0.3026041666666667,
+                            "y": 0.5294117647058824,
+                            "uniqueID": 1734642775835,
+                            "ioValues": [
+                                {
+                                    "name": "t",
+                                    "ioValue": 19
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "t+200"
                         }
                     ],
                     "allConnectors": [
@@ -3507,6 +3537,20 @@
                             "ap2Primary": true,
                             "ap1ID": 1734640901143,
                             "ap2ID": 1734640916115
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640901933,
+                            "ap2ID": 1734642770191
+                        },
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "t",
+                            "ap2Primary": false,
+                            "ap1ID": 1734640901933,
+                            "ap2ID": 1734642775835
                         },
                         {
                             "ap1Name": "geometry",
