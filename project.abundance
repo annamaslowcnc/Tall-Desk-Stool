@@ -63,8 +63,8 @@
         {
             "atomType": "Molecule",
             "name": "Frame",
-            "x": 0.1734375,
-            "y": 0.20470588235294118,
+            "x": 0.16979166666666667,
+            "y": 0.19294117647058825,
             "uniqueID": 1734479302872,
             "ioValues": [
                 {
@@ -92,7 +92,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1734630612483
+                            "ioValue": 1734635866171
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -1449,8 +1449,8 @@
                 {
                     "atomType": "Join",
                     "name": "Fusion",
-                    "x": 0.6979166666666667,
-                    "y": 0.35058823529411764,
+                    "x": 0.5421875,
+                    "y": 0.2776470588235294,
                     "uniqueID": 1734630612483,
                     "ioValues": [
                         {
@@ -1473,6 +1473,71 @@
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
                     "unionType": "Fusion",
                     "unionIndex": 1
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.7755208333333334,
+                    "y": 0.7952941176470588,
+                    "uniqueID": 1734635852731,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1734635893608
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 19
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Join",
+                    "name": "Assembly",
+                    "x": 0.8364583333333334,
+                    "y": 0.5082352941176471,
+                    "uniqueID": 1734635866171,
+                    "ioValues": [
+                        {
+                            "name": "Shape 1",
+                            "ioValue": 1734635852731
+                        },
+                        {
+                            "name": "Shape 3",
+                            "ioValue": 1734635893608
+                        }
+                    ],
+                    "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+                    "unionType": "Assembly",
+                    "unionIndex": 0
+                },
+                {
+                    "atomType": "Tag",
+                    "name": ",cutLayout",
+                    "x": 0.7046874999999999,
+                    "y": 0.31058823529411766,
+                    "uniqueID": 1734635893608,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1734630612483
+                        }
+                    ],
+                    "description": "Tags geometry so that it can be extracted later.",
+                    "tags": [
+                        "",
+                        "cutLayout"
+                    ],
+                    "cutTag": true
                 }
             ],
             "allConnectors": [
@@ -1503,6 +1568,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734479302512,
                     "ap2ID": 1734479546056
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302512,
+                    "ap2ID": 1734635852731
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -1562,10 +1634,38 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734630612483,
+                    "ap2ID": 1734635893608
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 1",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635852731,
+                    "ap2ID": 1734635866171
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
                     "ap2Primary": false,
-                    "ap1ID": 1734630612483,
+                    "ap1ID": 1734635866171,
                     "ap2ID": 1734479303361
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734635893608,
+                    "ap2ID": 1734635852731
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 3",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635893608,
+                    "ap2ID": 1734635866171
                 }
             ],
             "fileTypeVersion": 1,
@@ -2294,7 +2394,7 @@
         },
         {
             "atomType": "Molecule",
-            "name": "Seat",
+            "name": "Foot Rest",
             "x": 0.3223958333333333,
             "y": 0.8141176470588235,
             "uniqueID": 1734635421637,
@@ -2692,6 +2792,70 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Join",
+            "name": "Assembly",
+            "x": 0.625,
+            "y": 0.25176470588235295,
+            "uniqueID": 1734635920706,
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": 1734479302872
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Assembly",
+            "unionIndex": 0
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.759375,
+            "y": 0.6941176470588235,
+            "uniqueID": 1734635939709,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": 1734635920706
+                },
+                {
+                    "name": "Material Thickness",
+                    "ioValue": 19
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 6
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": [
+                {
+                    "translate": {
+                        "x": 403.01246643066406,
+                        "y": 2.88909912109375
+                    },
+                    "id": 1,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 809.0217856923828,
+                        "y": 2.88909907499999
+                    },
+                    "id": 0,
+                    "rotate": 110
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -2750,6 +2914,20 @@
             "ap2Primary": false,
             "ap1ID": 1734479149813,
             "ap2ID": 1734635421637
+        },
+        {
+            "ap1Name": "Geometry",
+            "ap2Name": "Shape 1",
+            "ap2Primary": false,
+            "ap1ID": 1734479302872,
+            "ap2ID": 1734635920706
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": false,
+            "ap1ID": 1734635920706,
+            "ap2ID": 1734635939709
         }
     ],
     "unitsKey": "MM",
