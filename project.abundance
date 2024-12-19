@@ -63,8 +63,8 @@
         {
             "atomType": "Molecule",
             "name": "Frame",
-            "x": 0.16979166666666667,
-            "y": 0.19294117647058825,
+            "x": 0.17916666666666667,
+            "y": 0.16941176470588235,
             "uniqueID": 1734479302872,
             "ioValues": [
                 {
@@ -1471,7 +1471,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Assembly",
+                    "unionType": "Fusion",
                     "unionIndex": 1
                 },
                 {
