@@ -932,11 +932,11 @@
                     "ioValues": [
                         {
                             "name": "Wood Thickness",
-                            "ioValue": 10
+                            "ioValue": 19
                         },
                         {
                             "name": "Stool Seat Height",
-                            "ioValue": 10
+                            "ioValue": 800
                         },
                         {
                             "name": "TBD",
@@ -999,17 +999,17 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.3171875,
-                            "y": 0.3058823529411765,
+                            "x": 0.321875,
+                            "y": 0.2635294117647059,
                             "uniqueID": 1734631153893,
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": ""
+                                    "ioValue": 1734631131919
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 0
+                                    "ioValue": 400
                                 },
                                 {
                                     "name": "yDist",
@@ -1031,11 +1031,11 @@
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": ""
+                                    "ioValue": 1734631131919
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 0
+                                    "ioValue": 400
                                 },
                                 {
                                     "name": "yDist",
@@ -1051,13 +1051,13 @@
                         {
                             "atomType": "Equation",
                             "name": "H/2",
-                            "x": 0.15989583333333332,
-                            "y": 0.6188235294117648,
+                            "x": 0.1328125,
+                            "y": 0.4988235294117647,
                             "uniqueID": 1734631169225,
                             "ioValues": [
                                 {
                                     "name": "H",
-                                    "ioValue": 1
+                                    "ioValue": 800
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -1065,7 +1065,41 @@
                         }
                     ],
                     "allConnectors": [
-                        null
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "H",
+                            "ap2Primary": false,
+                            "ap1ID": 1734479550195,
+                            "ap2ID": 1734631169225
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1734631131919,
+                            "ap2ID": 1734631153893
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1734631131919,
+                            "ap2ID": 1734631164687
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734631169225,
+                            "ap2ID": 1734631153893
+                        },
+                        {
+                            "ap1Name": "result",
+                            "ap2Name": "xDist",
+                            "ap2Primary": false,
+                            "ap1ID": 1734631169225,
+                            "ap2ID": 1734631164687
+                        }
                     ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
@@ -1108,6 +1142,13 @@
                 },
                 {
                     "ap1Name": "number or geometry",
+                    "ap2Name": "Wood Thickness",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302512,
+                    "ap2ID": 1734479550728
+                },
+                {
+                    "ap1Name": "number or geometry",
                     "ap2Name": "Stool Seat Height",
                     "ap2Primary": false,
                     "ap1ID": 1734479302607,
@@ -1119,6 +1160,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734479302607,
                     "ap2ID": 1734479542243
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "Stool Seat Height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479302607,
+                    "ap2ID": 1734479550728
                 },
                 {
                     "ap1Name": "Geometry",
