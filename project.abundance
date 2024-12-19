@@ -89,7 +89,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1734479303361,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1734630612483
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -888,7 +893,12 @@
                             "x": 0.98,
                             "y": 0.5,
                             "uniqueID": 1734479545686,
-                            "ioValues": [],
+                            "ioValues": [
+                                {
+                                    "name": "number or geometry",
+                                    "ioValue": 1734634522849
+                                }
+                            ],
                             "description": "Connect geometry here to make it available in the next level up. "
                         },
                         {
@@ -975,13 +985,13 @@
                         {
                             "atomType": "Move",
                             "name": "Move",
-                            "x": 0.35572916666666665,
-                            "y": 0.24,
+                            "x": 0.35781250000000003,
+                            "y": 0.2376470588235294,
                             "uniqueID": 1734634364856,
                             "ioValues": [
                                 {
                                     "name": "geometry",
-                                    "ioValue": ""
+                                    "ioValue": 1734634291732
                                 },
                                 {
                                     "name": "xDist",
@@ -989,7 +999,7 @@
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": 0
+                                    "ioValue": 85
                                 },
                                 {
                                     "name": "zDist",
@@ -1027,9 +1037,68 @@
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                             "currentEquation": "H+300-25"
+                        },
+                        {
+                            "atomType": "ShrinkWrap",
+                            "name": "Shrink Wrap",
+                            "x": 0.47500000000000003,
+                            "y": 0.3552941176470588,
+                            "uniqueID": 1734634504225,
+                            "ioValues": [
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1734634364856
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1734634359559
+                                },
+                                {
+                                    "name": "Shape 3",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "Shape 1",
+                                    "ioValue": 1734634364856
+                                },
+                                {
+                                    "name": "Shape 2",
+                                    "ioValue": 1734634359559
+                                },
+                                {
+                                    "name": "Shape 3",
+                                    "ioValue": ""
+                                }
+                            ],
+                            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
+                        },
+                        {
+                            "atomType": "Extrude",
+                            "name": "Extrude",
+                            "x": 0.5677083333333333,
+                            "y": 0.5247058823529412,
+                            "uniqueID": 1734634522849,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1734634504225
+                                },
+                                {
+                                    "name": "height",
+                                    "ioValue": 19
+                                }
+                            ],
+                            "description": "Extrudes a 2D shape. Input can be negitive. "
                         }
                     ],
                     "allConnectors": [
+                        {
+                            "ap1Name": "number or geometry",
+                            "ap2Name": "height",
+                            "ap2Primary": false,
+                            "ap1ID": 1734479546432,
+                            "ap2ID": 1734634522849
+                        },
                         {
                             "ap1Name": "number or geometry",
                             "ap2Name": "H",
@@ -1048,8 +1117,29 @@
                             "ap1Name": "geometry",
                             "ap2Name": "geometry",
                             "ap2Primary": true,
+                            "ap1ID": 1734634291732,
+                            "ap2ID": 1734634364856
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
                             "ap1ID": 1734634296962,
                             "ap2ID": 1734634359559
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 2",
+                            "ap2Primary": false,
+                            "ap1ID": 1734634359559,
+                            "ap2ID": 1734634504225
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "Shape 1",
+                            "ap2Primary": false,
+                            "ap1ID": 1734634364856,
+                            "ap2ID": 1734634504225
                         },
                         {
                             "ap1Name": "result",
@@ -1064,10 +1154,24 @@
                             "ap2Primary": false,
                             "ap1ID": 1734634374836,
                             "ap2ID": 1734634359559
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "geometry",
+                            "ap2Primary": true,
+                            "ap1ID": 1734634504225,
+                            "ap2ID": 1734634522849
+                        },
+                        {
+                            "ap1Name": "geometry",
+                            "ap2Name": "number or geometry",
+                            "ap2Primary": false,
+                            "ap1ID": 1734634522849,
+                            "ap2ID": 1734479545686
                         }
                     ],
                     "fileTypeVersion": 1,
-                    "compiledBom": {}
+                    "compiledBom": []
                 },
                 {
                     "atomType": "Molecule",
@@ -1360,6 +1464,10 @@
                         {
                             "name": "Shape 3",
                             "ioValue": 1734479550728
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": 1734479546056
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -1440,10 +1548,24 @@
                 },
                 {
                     "ap1Name": "Geometry",
+                    "ap2Name": "Shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": 1734479546056,
+                    "ap2ID": 1734630612483
+                },
+                {
+                    "ap1Name": "Geometry",
                     "ap2Name": "Shape 3",
                     "ap2Primary": false,
                     "ap1ID": 1734479550728,
                     "ap2ID": 1734630612483
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1734630612483,
+                    "ap2ID": 1734479303361
                 }
             ],
             "fileTypeVersion": 1,
