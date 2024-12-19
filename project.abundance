@@ -3253,7 +3253,7 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": 90
+                            "ioValue": -90
                         },
                         {
                             "name": "z-axis degrees",
@@ -3265,8 +3265,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.24947916666666667,
-                    "y": 0.47764705882352937,
+                    "x": 0.2739583333333333,
+                    "y": 0.5247058823529412,
                     "uniqueID": 1734636840597,
                     "ioValues": [
                         {
@@ -3279,7 +3279,7 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": 90
+                            "ioValue": -90
                         },
                         {
                             "name": "z-axis degrees",
