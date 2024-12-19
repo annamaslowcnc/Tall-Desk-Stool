@@ -3218,7 +3218,7 @@
                 {
                     "atomType": "Join",
                     "name": "Assembly",
-                    "x": 0.8390624999999999,
+                    "x": 0.8364583333333334,
                     "y": 0.2964705882352941,
                     "uniqueID": 1734636947046,
                     "ioValues": [
@@ -3229,6 +3229,10 @@
                         {
                             "name": "Shape 3",
                             "ioValue": 1734650174254
+                        },
+                        {
+                            "name": "Shape 4",
+                            "ioValue": 1734649975677
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -3626,19 +3630,19 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": ""
+                            "ioValue": 1734649976562
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 0
+                            "ioValue": 120
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -200
+                            "ioValue": -50
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 900
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -3646,8 +3650,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.546875,
-                    "y": 0.7623529411764706,
+                    "x": 0.525,
+                    "y": 0.7976470588235294,
                     "uniqueID": 1734649976562,
                     "ioValues": [
                         {
@@ -3660,7 +3664,7 @@
                         },
                         {
                             "name": "y-axis degrees",
-                            "ioValue": -70
+                            "ioValue": -80
                         },
                         {
                             "name": "z-axis degrees",
@@ -3746,9 +3750,31 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "H+100",
+                    "x": 0.5276041666666667,
+                    "y": 0.9388235294117646,
+                    "uniqueID": 1734651000169,
+                    "ioValues": [
+                        {
+                            "name": "H",
+                            "ioValue": 800
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "H+100"
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "H",
+                    "ap2Primary": false,
+                    "ap1ID": 1734636557097,
+                    "ap2ID": 1734651000169
+                },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "Frame",
@@ -3807,10 +3833,31 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Shape 4",
+                    "ap2Primary": false,
+                    "ap1ID": 1734649975677,
+                    "ap2ID": 1734636947046
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734649976562,
+                    "ap2ID": 1734649975677
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
                     "ap2Primary": false,
                     "ap1ID": 1734650174254,
                     "ap2ID": 1734636947046
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734651000169,
+                    "ap2ID": 1734649975677
                 }
             ],
             "fileTypeVersion": 1,
