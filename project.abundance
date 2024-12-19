@@ -3228,7 +3228,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -219
+                            "ioValue": 0
                         },
                         {
                             "name": "yDist",
@@ -3244,8 +3244,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.2546875,
-                    "y": 0.21411764705882352,
+                    "x": 0.23645833333333333,
+                    "y": 0.16470588235294117,
                     "uniqueID": 1734636826556,
                     "ioValues": [
                         {
@@ -3270,8 +3270,8 @@
                 {
                     "atomType": "Rotate",
                     "name": "Rotate",
-                    "x": 0.2739583333333333,
-                    "y": 0.5247058823529412,
+                    "x": 0.28541666666666665,
+                    "y": 0.7858823529411765,
                     "uniqueID": 1734636840597,
                     "ioValues": [
                         {
@@ -3363,6 +3363,230 @@
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Molecule",
+                    "name": "Molecule",
+                    "x": 0.48697916666666663,
+                    "y": 0.7529411764705882,
+                    "uniqueID": 1734640901215,
+                    "ioValues": [
+                        {
+                            "name": "Stool Seat Height",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "TBD",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Frame",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Foot Rest",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Back",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Seat",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "Wood Thickness",
+                            "ioValue": 10
+                        }
+                    ],
+                    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+                    "topLevel": false,
+                    "allAtoms": [
+                        {
+                            "atomType": "Output",
+                            "name": "Output",
+                            "x": 0.98,
+                            "y": 0.5,
+                            "uniqueID": 1734640901907,
+                            "ioValues": [],
+                            "description": "Connect geometry here to make it available in the next level up. "
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Stool Seat Height",
+                            "x": 0.04,
+                            "y": 0.6164705882352941,
+                            "uniqueID": 1734640901305,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "TBD",
+                            "x": 0.04,
+                            "y": 0.7058823529411764,
+                            "uniqueID": 1734640901550,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Frame",
+                            "x": 0.04,
+                            "y": 0.17176470588235296,
+                            "uniqueID": 1734640901143,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Foot Rest",
+                            "x": 0.04,
+                            "y": 0.45176470588235296,
+                            "uniqueID": 1734640901768,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Back",
+                            "x": 0.04,
+                            "y": 0.2635294117647059,
+                            "uniqueID": 1734640901713,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Seat",
+                            "x": 0.04,
+                            "y": 0.35764705882352943,
+                            "uniqueID": 1734640901810,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Input",
+                            "name": "Wood Thickness",
+                            "x": 0.04,
+                            "y": 0.7905882352941177,
+                            "uniqueID": 1734640901933,
+                            "ioValues": [],
+                            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.4109375,
+                            "y": 0.26588235294117646,
+                            "uniqueID": 1734640916496,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1734636826556
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": -200
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Rotate",
+                            "name": "Rotate",
+                            "x": 0.184375,
+                            "y": 0.26823529411764707,
+                            "uniqueID": 1734640916803,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1734479302872
+                                },
+                                {
+                                    "name": "x-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "y-axis degrees",
+                                    "ioValue": -90
+                                },
+                                {
+                                    "name": "z-axis degrees",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                        },
+                        {
+                            "atomType": "Rotate",
+                            "name": "Rotate",
+                            "x": 0.19791666666666669,
+                            "y": 0.7505882352941177,
+                            "uniqueID": 1734640916115,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": 1734479302872
+                                },
+                                {
+                                    "name": "x-axis degrees",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "y-axis degrees",
+                                    "ioValue": -90
+                                },
+                                {
+                                    "name": "z-axis degrees",
+                                    "ioValue": 90
+                                }
+                            ],
+                            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "-200-t",
+                            "x": 0.2598958333333333,
+                            "y": 0.3976470588235294,
+                            "uniqueID": 1734640916447,
+                            "ioValues": [
+                                {
+                                    "name": "t",
+                                    "ioValue": 19
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "-200-t"
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "-200-t",
+                            "x": 0.25885416666666666,
+                            "y": 0.5223529411764706,
+                            "uniqueID": 1734640924846,
+                            "ioValues": [
+                                {
+                                    "name": "t",
+                                    "ioValue": 19
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "-200-t"
+                        }
+                    ],
+                    "allConnectors": [],
+                    "fileTypeVersion": 1,
+                    "compiledBom": {}
                 }
             ],
             "allConnectors": [
@@ -3421,13 +3645,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1734638172695,
                     "ap2ID": 1734638202376
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "xDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1734638202376,
-                    "ap2ID": 1734636809130
                 }
             ],
             "fileTypeVersion": 1,
