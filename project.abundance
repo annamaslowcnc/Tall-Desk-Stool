@@ -981,9 +981,92 @@
                             "uniqueID": 1734479550196,
                             "ioValues": [],
                             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
+                        },
+                        {
+                            "atomType": "Circle",
+                            "name": "Circle",
+                            "x": 0.16875,
+                            "y": 0.27058823529411763,
+                            "uniqueID": 1734631131919,
+                            "ioValues": [
+                                {
+                                    "name": "diameter",
+                                    "ioValue": 50
+                                }
+                            ],
+                            "description": "Creates a new circle."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.3171875,
+                            "y": 0.3058823529411765,
+                            "uniqueID": 1734631153893,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Move",
+                            "name": "Move",
+                            "x": 0.290625,
+                            "y": 0.7082352941176471,
+                            "uniqueID": 1734631164687,
+                            "ioValues": [
+                                {
+                                    "name": "geometry",
+                                    "ioValue": ""
+                                },
+                                {
+                                    "name": "xDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "yDist",
+                                    "ioValue": 0
+                                },
+                                {
+                                    "name": "zDist",
+                                    "ioValue": 0
+                                }
+                            ],
+                            "description": "Moves a shape laterally in X, Y, Z."
+                        },
+                        {
+                            "atomType": "Equation",
+                            "name": "H/2",
+                            "x": 0.15989583333333332,
+                            "y": 0.6188235294117648,
+                            "uniqueID": 1734631169225,
+                            "ioValues": [
+                                {
+                                    "name": "H",
+                                    "ioValue": 1
+                                }
+                            ],
+                            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                            "currentEquation": "H/2"
                         }
                     ],
-                    "allConnectors": [],
+                    "allConnectors": [
+                        null
+                    ],
                     "fileTypeVersion": 1,
                     "compiledBom": {}
                 },
