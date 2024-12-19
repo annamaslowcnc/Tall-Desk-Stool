@@ -3149,7 +3149,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": 1734636557110,
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": 1734636947046
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -3223,7 +3228,7 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": -20
+                            "ioValue": -219
                         },
                         {
                             "name": "yDist",
@@ -3320,7 +3325,7 @@
                 },
                 {
                     "atomType": "Equation",
-                    "name": "-1-t",
+                    "name": "-200-t",
                     "x": 0.2755208333333333,
                     "y": 0.3388235294117647,
                     "uniqueID": 1734638202376,
@@ -3331,22 +3336,22 @@
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "-1-t"
+                    "currentEquation": "-200-t"
                 },
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.5864583333333334,
-                    "y": 0.7435294117647059,
-                    "uniqueID": 1734638622416,
+                    "x": 0.17604166666666668,
+                    "y": 0.7741176470588235,
+                    "uniqueID": 1734639234994,
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1734636809130
+                            "ioValue": 1734635150774
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 100
+                            "ioValue": -200
                         },
                         {
                             "name": "yDist",
@@ -3354,7 +3359,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 800
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -3376,18 +3381,18 @@
                     "ap2ID": 1734636840597
                 },
                 {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734636620607,
+                    "ap2ID": 1734639234994
+                },
+                {
                     "ap1Name": "geometry",
                     "ap2Name": "Shape 3",
                     "ap2Primary": false,
                     "ap1ID": 1734636809130,
                     "ap2ID": 1734636947046
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1734636809130,
-                    "ap2ID": 1734638622416
                 },
                 {
                     "ap1Name": "geometry",
@@ -3402,6 +3407,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734636840597,
                     "ap2ID": 1734636947046
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1734636947046,
+                    "ap2ID": 1734636557110
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -3419,7 +3431,7 @@
                 }
             ],
             "fileTypeVersion": 1,
-            "compiledBom": {}
+            "compiledBom": []
         }
     ],
     "allConnectors": [
