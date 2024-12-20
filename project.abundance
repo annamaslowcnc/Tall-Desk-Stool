@@ -2839,24 +2839,6 @@
                     "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
                 },
                 {
-                    "atomType": "Extrude",
-                    "name": "Extrude",
-                    "x": 0.671875,
-                    "y": 0.21176470588235294,
-                    "uniqueID": 1734635421404,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1734635422088
-                        },
-                        {
-                            "name": "height",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Extrudes a 2D shape. Input can be negitive. "
-                },
-                {
                     "atomType": "Input",
                     "name": "Wood Thickness",
                     "x": 0.04,
@@ -2911,32 +2893,6 @@
                     "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable"
                 },
                 {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.721875,
-                    "y": 0.7105882352941176,
-                    "uniqueID": 1734636483475,
-                    "ioValues": [
-                        {
-                            "name": "geometry",
-                            "ioValue": 1734635421404
-                        },
-                        {
-                            "name": "xDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 800
-                        }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
-                },
-                {
                     "atomType": "Join",
                     "name": "Assembly",
                     "x": 0.8557291666666665,
@@ -2948,8 +2904,8 @@
                             "ioValue": 1734636484233
                         },
                         {
-                            "name": "Shape 5",
-                            "ioValue": 1734636483475
+                            "name": "Shape 6",
+                            "ioValue": 1734715764912
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -2965,7 +2921,7 @@
                     "ioValues": [
                         {
                             "name": "geometry",
-                            "ioValue": 1734635421404
+                            "ioValue": 1734715773691
                         }
                     ],
                     "description": "Tags geometry so that it can be extracted later.",
@@ -2974,9 +2930,67 @@
                         ""
                     ],
                     "cutTag": true
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.7364583333333333,
+                    "y": 0.7552941176470588,
+                    "uniqueID": 1734715764912,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1734715773691
+                        },
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 19
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
+                },
+                {
+                    "atomType": "Extrude",
+                    "name": "Extrude",
+                    "x": 0.6515625,
+                    "y": 0.2070588235294118,
+                    "uniqueID": 1734715773691,
+                    "ioValues": [
+                        {
+                            "name": "geometry",
+                            "ioValue": 1734635422088
+                        },
+                        {
+                            "name": "height",
+                            "ioValue": 19
+                        }
+                    ],
+                    "description": "Extrudes a 2D shape. Input can be negitive. "
                 }
             ],
             "allConnectors": [
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734715773691
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734715764912
+                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
@@ -3038,35 +3052,7 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1734635422088,
-                    "ap2ID": 1734635421404
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1734635421404,
-                    "ap2ID": 1734636484233
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "geometry",
-                    "ap2Primary": true,
-                    "ap1ID": 1734635421404,
-                    "ap2ID": 1734636483475
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "zDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734636483475
-                },
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "Shape 5",
-                    "ap2Primary": false,
-                    "ap1ID": 1734636483475,
-                    "ap2ID": 1734636483580
+                    "ap2ID": 1734715773691
                 },
                 {
                     "ap1Name": "geometry",
@@ -3081,6 +3067,27 @@
                     "ap2Primary": false,
                     "ap1ID": 1734636484233,
                     "ap2ID": 1734636483580
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "Shape 6",
+                    "ap2Primary": false,
+                    "ap1ID": 1734715764912,
+                    "ap2ID": 1734636483580
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734715773691,
+                    "ap2ID": 1734636484233
+                },
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "geometry",
+                    "ap2Primary": true,
+                    "ap1ID": 1734715773691,
+                    "ap2ID": 1734715764912
                 }
             ],
             "fileTypeVersion": 1,
