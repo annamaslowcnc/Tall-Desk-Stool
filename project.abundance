@@ -3152,7 +3152,7 @@
                     "ioValues": [
                         {
                             "name": "number or geometry",
-                            "ioValue": 1734640901215
+                            "ioValue": 1734636947046
                         }
                     ],
                     "description": "Connect geometry here to make it available in the next level up. "
@@ -3233,6 +3233,10 @@
                         {
                             "name": "Shape 4",
                             "ioValue": 1734649975677
+                        },
+                        {
+                            "name": "Shape 5",
+                            "ioValue": 1734649986779
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -3686,15 +3690,15 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 25000
+                            "ioValue": 300
                         },
                         {
                             "name": "yDist",
-                            "ioValue": 50
+                            "ioValue": 100
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 0
+                            "ioValue": 400
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -3765,6 +3769,21 @@
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "H+100"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "H/2",
+                    "x": 0.4166666666666667,
+                    "y": 0.45176470588235296,
+                    "uniqueID": 1734716098847,
+                    "ioValues": [
+                        {
+                            "name": "H",
+                            "ioValue": 800
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "H/2"
                 }
             ],
             "allConnectors": [
@@ -3774,6 +3793,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734636557097,
                     "ap2ID": 1734651000169
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "H",
+                    "ap2Primary": false,
+                    "ap1ID": 1734636557097,
+                    "ap2ID": 1734716098847
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -3804,6 +3830,13 @@
                     "ap2ID": 1734639234994
                 },
                 {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap2Primary": false,
+                    "ap1ID": 1734636947046,
+                    "ap2ID": 1734636557110
+                },
+                {
                     "ap1Name": "number or geometry",
                     "ap2Name": "Wood Thickness",
                     "ap2Primary": false,
@@ -3823,13 +3856,6 @@
                     "ap2Primary": false,
                     "ap1ID": 1734640901215,
                     "ap2ID": 1734636947046
-                },
-                {
-                    "ap1Name": "Geometry",
-                    "ap2Name": "number or geometry",
-                    "ap2Primary": false,
-                    "ap1ID": 1734640901215,
-                    "ap2ID": 1734636557110
                 },
                 {
                     "ap1Name": "geometry",
@@ -3854,6 +3880,13 @@
                 },
                 {
                     "ap1Name": "geometry",
+                    "ap2Name": "Shape 5",
+                    "ap2Primary": false,
+                    "ap1ID": 1734649986779,
+                    "ap2ID": 1734636947046
+                },
+                {
+                    "ap1Name": "geometry",
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1734649986884,
@@ -3872,6 +3905,13 @@
                     "ap2Primary": false,
                     "ap1ID": 1734651000169,
                     "ap2ID": 1734649975677
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734716098847,
+                    "ap2ID": 1734649986779
                 }
             ],
             "fileTypeVersion": 1,
