@@ -63,8 +63,8 @@
         {
             "atomType": "Molecule",
             "name": "Frame",
-            "x": 0.17916666666666667,
-            "y": 0.16941176470588235,
+            "x": 0.17447916666666669,
+            "y": 0.15294117647058825,
             "uniqueID": 1734479302872,
             "ioValues": [
                 {
@@ -1471,7 +1471,7 @@
                         }
                     ],
                     "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
-                    "unionType": "Assembly",
+                    "unionType": "Fusion",
                     "unionIndex": 1
                 },
                 {
@@ -3946,7 +3946,208 @@
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": []
+            "placements": [
+                {
+                    "translate": {
+                        "x": 511.22113037109375,
+                        "y": 311.0640106201172
+                    },
+                    "id": 20,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": -7.702148477343769,
+                        "y": 677.3923950306641
+                    },
+                    "id": 21,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": -197.11090087656248,
+                        "y": 1161.7097981554687
+                    },
+                    "id": 0,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 782.03395265625,
+                        "y": 471.26777638632814
+                    },
+                    "id": 23,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 528.3607638707032,
+                        "y": 901.6406721875
+                    },
+                    "id": 22,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 717.9210971445312,
+                        "y": 118.7198805234375
+                    },
+                    "id": 5,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 747.4290771125,
+                        "y": 1154.6618364005371
+                    },
+                    "id": 10,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 716.0900603499999,
+                        "y": 57.52519608452148
+                    },
+                    "id": 24,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 547.9629409173829,
+                        "y": 183.61781312265626
+                    },
+                    "id": 4,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 1474.2985995828126,
+                        "y": 1295.1011671554688
+                    },
+                    "id": 6,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 594.9327582445312,
+                        "y": 603.0999755828125
+                    },
+                    "id": 1,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 988.1630860994628,
+                        "y": 1084.5546042125
+                    },
+                    "id": 15,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 1073.2073995701417,
+                        "y": 1006.7832724484375
+                    },
+                    "id": 14,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": -35.1108894074707,
+                        "y": 1512.799034196875
+                    },
+                    "id": 11,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 1038.3710245226562,
+                        "y": 923.7228232826172
+                    },
+                    "id": 9,
+                    "rotate": 270
+                },
+                {
+                    "translate": {
+                        "x": 1205.877843487793,
+                        "y": 673.0922411147217
+                    },
+                    "id": 19,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 835.972284603125,
+                        "y": 431.0259970925293
+                    },
+                    "id": 16,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 3.099998500292969,
+                        "y": 339.5359418867188
+                    },
+                    "id": 17,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 754.0342217132812,
+                        "y": 1158.0693930855957
+                    },
+                    "id": 18,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 1147.108618313281,
+                        "y": 22.100002285595707
+                    },
+                    "id": 12,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 273.1000061125,
+                        "y": 259.532994167041
+                    },
+                    "id": 2,
+                    "rotate": 180
+                },
+                {
+                    "translate": {
+                        "x": 172.01156996704103,
+                        "y": -204.57249011250002
+                    },
+                    "id": 7,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": -139.7010106125,
+                        "y": 448.15179383295896
+                    },
+                    "id": 8,
+                    "rotate": 0
+                },
+                {
+                    "translate": {
+                        "x": 972.414819967041,
+                        "y": 359.25780482851565
+                    },
+                    "id": 13,
+                    "rotate": 90
+                },
+                {
+                    "translate": {
+                        "x": 430.191558167041,
+                        "y": 741.4518386875
+                    },
+                    "id": 3,
+                    "rotate": 90
+                }
+            ]
         }
     ],
     "allConnectors": [
