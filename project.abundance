@@ -2851,7 +2851,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 800
+                            "ioValue": 10
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -3053,13 +3053,6 @@
                     "ap2Primary": true,
                     "ap1ID": 1734635421404,
                     "ap2ID": 1734636483475
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "height",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734635421404
                 },
                 {
                     "ap1Name": "number or geometry",
@@ -3634,11 +3627,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 150
+                            "ioValue": 140
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -30
+                            "ioValue": -40
                         },
                         {
                             "name": "zDist",
@@ -3738,11 +3731,11 @@
                         },
                         {
                             "name": "xDist",
-                            "ioValue": 150
+                            "ioValue": 165
                         },
                         {
                             "name": "yDist",
-                            "ioValue": -50
+                            "ioValue": -35
                         },
                         {
                             "name": "zDist",
