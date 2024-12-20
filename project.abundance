@@ -2851,7 +2851,7 @@
                         },
                         {
                             "name": "height",
-                            "ioValue": 19
+                            "ioValue": 800
                         }
                     ],
                     "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -2931,7 +2931,7 @@
                         },
                         {
                             "name": "zDist",
-                            "ioValue": 19
+                            "ioValue": 800
                         }
                     ],
                     "description": "Moves a shape laterally in X, Y, Z."
@@ -2977,20 +2977,6 @@
                 }
             ],
             "allConnectors": [
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "height",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734635421404
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "zDist",
-                    "ap2Primary": false,
-                    "ap1ID": 1734635422097,
-                    "ap2ID": 1734636483475
-                },
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "geometry",
@@ -3066,6 +3052,20 @@
                     "ap2Name": "geometry",
                     "ap2Primary": true,
                     "ap1ID": 1734635421404,
+                    "ap2ID": 1734636483475
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "height",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
+                    "ap2ID": 1734635421404
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "zDist",
+                    "ap2Primary": false,
+                    "ap1ID": 1734635422097,
                     "ap2ID": 1734636483475
                 },
                 {
@@ -3404,11 +3404,11 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 219
+                                    "ioValue": 269
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": -181
+                                    "ioValue": -231
                                 },
                                 {
                                     "name": "zDist",
@@ -3491,7 +3491,7 @@
                         },
                         {
                             "atomType": "Equation",
-                            "name": "t-200",
+                            "name": "t-250",
                             "x": 0.3,
                             "y": 0.3741176470588235,
                             "uniqueID": 1734642770191,
@@ -3502,11 +3502,11 @@
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "t-200"
+                            "currentEquation": "t-250"
                         },
                         {
                             "atomType": "Equation",
-                            "name": "t+200",
+                            "name": "t+250",
                             "x": 0.3026041666666667,
                             "y": 0.5294117647058824,
                             "uniqueID": 1734642775835,
@@ -3517,7 +3517,7 @@
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "t+200"
+                            "currentEquation": "t+250"
                         }
                     ],
                     "allConnectors": [
@@ -3624,8 +3624,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.6739583333333333,
-                    "y": 0.8094117647058824,
+                    "x": 0.6625,
+                    "y": 0.8070588235294117,
                     "uniqueID": 1734649975677,
                     "ioValues": [
                         {
@@ -3676,8 +3676,8 @@
                 {
                     "atomType": "Move",
                     "name": "Move",
-                    "x": 0.48958333333333337,
-                    "y": 0.2,
+                    "x": 0.5145833333333334,
+                    "y": 0.1623529411764706,
                     "uniqueID": 1734649986779,
                     "ioValues": [
                         {
