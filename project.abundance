@@ -3404,11 +3404,11 @@
                                 },
                                 {
                                     "name": "xDist",
-                                    "ioValue": 269
+                                    "ioValue": 219
                                 },
                                 {
                                     "name": "yDist",
-                                    "ioValue": -231
+                                    "ioValue": -181
                                 },
                                 {
                                     "name": "zDist",
@@ -3491,7 +3491,7 @@
                         },
                         {
                             "atomType": "Equation",
-                            "name": "t-250",
+                            "name": "t-200",
                             "x": 0.3,
                             "y": 0.3741176470588235,
                             "uniqueID": 1734642770191,
@@ -3502,11 +3502,11 @@
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "t-250"
+                            "currentEquation": "t-200"
                         },
                         {
                             "atomType": "Equation",
-                            "name": "t+250",
+                            "name": "t+200",
                             "x": 0.3026041666666667,
                             "y": 0.5294117647058824,
                             "uniqueID": 1734642775835,
@@ -3517,7 +3517,7 @@
                                 }
                             ],
                             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                            "currentEquation": "t+250"
+                            "currentEquation": "t+200"
                         }
                     ],
                     "allConnectors": [
